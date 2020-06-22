@@ -1,13 +1,11 @@
-class Practica{
+class Potencia{
     public int Practica(int a, int b){
         int res;
-        if(b>1){
-            res=a*Practica(a,b-1);
+        if(b==0){
+            res=1;
         }else{
-            res=a;
+            res=a*Practica(a,b-1);
         }
         return res;
     }
-    
-
 }
